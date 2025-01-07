@@ -1,0 +1,67 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.bookmark.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 10px;
+  height: 2.5px;
+  border-radius: 0 0 1px 1px ;
+  border-top: solid 10px currentColor;
+  border-left: solid 10px currentColor;
+  border-right: solid 10px currentColor;
+
+  .bookmark.icon:before {
+    content: '';
+    position: absolute;
+    top: 203px;
+    left: 8px;
+    width: 75px;
+    height: 75px;
+    border-radius: 0  0 10px 10px ;
+    z-index:-1;
+    border-top: solid 10px currentColor;
+    border-left: solid 10px currentColor;
+    -webkit-transform: rotate(48deg);
+            transform: rotate(45deg);
+  }
+}
